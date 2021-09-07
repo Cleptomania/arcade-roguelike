@@ -21,6 +21,10 @@ class Roguelike(arcade.Window):
         # Code to draw the screen goes here
 
 
-if __name__ == "__main__":
+def main():
     window = Roguelike()
     arcade.run()
+
+
+if __name__ == "__main__":
+    main()

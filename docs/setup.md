@@ -36,6 +36,25 @@ Now that our virtual environment is activated, go ahead and install Arcade with:
 pip install arcade
 ```
 
+Now let's setup a quick Python file named `main.py` and put the following code in it:
+
+```Python
+#!/usr/bin/env python3
+import arcade
+
+
+def main():
+    print("Hello World!")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+You can then run this like any Python program by running `python main.py` in the terminal. Alternatively, because of the first line, you can just do `./main.py`, this line is called a "shebang".
+
+If this file runs successfully and prints back "Hello World" to you, it verifies two things, that you have python setup, and Arcade is installed.
+
 That's all you need! Arcade is our only dependency for this game, so we're all set to go.
 
 In the next chapter we'll begin putting down some boilerplate code to get our Arcade window up and running.

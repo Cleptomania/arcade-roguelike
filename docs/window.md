@@ -1,8 +1,8 @@
-# Creating a Window
+# 01 - Creating a Window
 
-The first thing we need to do in creating our game is to get a window open. So we'll open up a blank window and set the background color. 
+This part assumes that you have gone through [Setup](./setup.md), and are setup and ready to go. Assuming that's the case, we'll get started with creating our game window using Arcade. We'll just create a blank window and set it's background color for this chapter.
 
-This part is fairly straightforward. First we'll import arcade and setup some constant values.
+This part is mostly straight-forward. First we'll import arcade and setup some constant values.
 
 ```Python
 import arcade
@@ -38,13 +38,16 @@ At this point we're not putting anything else in the `on_draw` function, but eve
 Lastly we just need some startup code to make this actually runnable:
 
 ```Python
-if __name__ == "__main__":
+def main():
     window = Roguelike()
     arcade.run()
+
+if __name__ == "__main__":
+    main()
 ```
 
 If we put everything together, this is our final code for this chapter:
 
 ```Python
-{!../docs_src/window/tutorial001.py!}
+{!../docs_src/window/final.py!}
 ```
