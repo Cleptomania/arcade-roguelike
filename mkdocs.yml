@@ -1,0 +1,42 @@
+site_name: Arcade Roguelike Tutorial
+site_description: A Complete Roguelike Tutorial using Python and the Arcade library
+site_url: https://roguelike.darreneberly.com/
+repo_url: https://github.com/Cleptomania/arcade-roguelike
+theme:
+  features:
+    - search.suggest
+  name: material
+  palette:
+    - media: "(prefers-colo-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/lightbulb-outline
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: cyan
+      accent: pink
+      toggle:
+        icon: material/lightbulb
+        name: Switch to light mode
+plugins:
+  - search
+nav:
+  - Introduction: index.md
+  - Project Setup: setup.md
+  - Create a Window: window.md
+markdown_extensions:
+  - toc:
+      permalink: true
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - codehilite
+  - mdx_include:
+      base_path: docs
+  - extra
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format ""
+  - pymdownx.tabbed
